@@ -1,3 +1,5 @@
-displayName = VWGCPP
+displayName = Vanilla WorldGen C++
 author = CactusDuper
-version = 1.0
+version = 1.2
+homepage = https://github.com/CactusDuper/VanillaWorldGenCPP
+side = Client

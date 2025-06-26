@@ -20,25 +20,51 @@ This project is, on average:
 ---
 
 <details>
-<summary><strong>Click here for Detailed Performance Breakdowns</strong></summary>
+<summary><strong>Click here for Detailed Performance Breakdowns by world size</strong></summary>
 
-### Performance Factor (How many times faster)
-*This shows the speedup factor of VanillaWorldGenCPP compared to TML.*
-| Small Worlds | Medium Worlds | Large Worlds |
-| :---: | :---: | :---: |
-| ![Small factor](assets/performance_factor_small.png) | ![Medium factor](assets/performance_factor_medium.png) | ![Large factor](assets/performance_factor_large.png) |
+<br>
 
-### Per-Pass Absolute Timings (ns)
-*This shows the absolute time spent in each world generation pass.*
-| Small Worlds | Medium Worlds | Large Worlds |
-| :---: | :---: | :---: |
-| ![Small absolute](assets/per_pass_absolute_small.png) | ![Medium absolute](assets/per_pass_absolute_medium.png) | ![Large absolute](assets/per_pass_absolute_large.png) |
+<details>
+<summary><strong>Small Worlds</strong></summary>
 
-### Top 20 best performers
-*A closer look at the 20 passes with the most time saved*
-| Small Worlds | Medium Worlds | Large Worlds |
-| :---: | :---: | :---: |
-| ![Small best](assets/top_20_best_performers_small.png) | ![Medium best](assets/top_20_best_performers_medium.png) | ![Large best](assets/top_20_best_performers_large.png) |
+#### Performance Factor
+![Small factor](assets/performance_factor_small.png)
+
+#### Per-Pass Absolute Timings
+![Small absolute](assets/per_pass_absolute_small.png)
+
+#### Top 20 Best Performers
+![Small best](assets/top_20_best_performers_small.png)
+
+</details>
+
+<details>
+<summary><strong>Medium Worlds</strong></summary>
+
+#### Performance Factor
+![Medium factor](assets/performance_factor_medium.png)
+
+#### Per-Pass Absolute Timings
+![Medium absolute](assets/per_pass_absolute_medium.png)
+
+#### Top 20 Best Performers
+![Medium best](assets/top_20_best_performers_medium.png)
+
+</details>
+
+<details>
+<summary><strong>Large Worlds</strong></summary>
+
+#### Performance Factor
+![Large factor](assets/performance_factor_large.png)
+
+#### Per-Pass Absolute Timings
+![Large absolute](assets/per_pass_absolute_large.png)
+
+#### Top 20 Best Performers
+![Large best](assets/top_20_best_performers_large.png)
+
+</details>
 
 </details>
 

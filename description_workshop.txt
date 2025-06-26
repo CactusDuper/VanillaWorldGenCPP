@@ -1,0 +1,5 @@
+Vanilla World Generation rewritten in C++. ~5.5x faster than Vanilla, ~3.3x faster than TML.
+
+Bit for bit accurate vanilla generation, seeds will produce the same world on Vanilla and when using this mod!
+
+Works on Linux and Windows.

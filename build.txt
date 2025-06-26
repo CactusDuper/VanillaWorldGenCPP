@@ -1,0 +1,3 @@
+displayName = VWGCPP
+author = CactusDuper
+version = 1.0

@@ -1,6 +1,6 @@
 # VanillaWorldGenCPP
 
-Full 1:1 bit for bit accurate Terraira WorldGen rewrite in C++. ~3.3x faster than TML, ~5.5x faster than Vanilla.
+Full 1:1 bit for bit accurate Terraira WorldGen rewrite in C++.
 
 ## Benchmark Results
 All benchmarks were run on the same set of 50 random seeds. Benchmarked against 1.4.4.9.

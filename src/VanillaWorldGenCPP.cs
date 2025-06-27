@@ -21,7 +21,7 @@ namespace VanillaWorldGenCPP {
 
         // Delegates for the C++ functions we want to call. The signatures must match the exported C++ functions.
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-        private delegate IntPtr CreateSessionDelegate(int seed, int taskId, int worldSizeEnum, int evilType, ProgressReportDelegate callback);
+        private delegate IntPtr CreateSessionDelegate(int seed, int taskId, int worldSizeEnum, int evilType, int gameMode, ProgressReportDelegate callback);
 
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         private delegate int RunWorldGenOnSessionDelegate(
@@ -158,9 +158,10 @@ namespace VanillaWorldGenCPP {
                 int evilType = WorldGen.WorldGenParam_Evil switch { -1 => 0, 0 => 1, 1 => 2, _ => 0 };
                 string worldSaveDirectory = Main.worldPathName;
                 string worldName = Main.ActiveWorldFileData.Name;
+                int gameMode = Main.GameMode;
 
                 // Create the C++ session object. This will initilize the generator with the current world parameters.
-                sessionHandle = _createSession(seed, taskId, worldSizeType, evilType, progressCallback);
+                sessionHandle = _createSession(seed, taskId, worldSizeType, evilType, gameMode, progressCallback);
                 if (sessionHandle == IntPtr.Zero) {
                     throw new Exception("The native 'create_session' function returned a null handle.");
                 }

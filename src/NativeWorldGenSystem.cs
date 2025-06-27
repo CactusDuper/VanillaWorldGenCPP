@@ -126,7 +126,7 @@ namespace VanillaWorldGenCPP {
             try {
                 modInstance.Logger.Debug("Saving modded world data (.twld)...");
                 object[] parameters = new object[] { Main.worldPathName, Main.ActiveWorldFileData.IsCloudSave };
-                modInstance._worldIoSaveMethod .Invoke(null, parameters);
+                modInstance._worldIoSaveMethod.Invoke(null, parameters);
             }
             catch (Exception ex) {
                 modInstance.Logger.Error($"Error saving modded world data (.twld): {ex}");
@@ -139,7 +139,7 @@ namespace VanillaWorldGenCPP {
             try {
                 modInstance.Logger.Debug("Archiving world backup...");
                 object[] archiveParams = new object[] { Main.worldPathName, Main.ActiveWorldFileData.IsCloudSave };
-                modInstance._backupIoWorldArchiveWorldMethod .Invoke(null, archiveParams);
+                modInstance._backupIoWorldArchiveWorldMethod.Invoke(null, archiveParams);
             }
             catch (Exception ex) {
                 modInstance.Logger.Error($"Error during world backup: {ex}");

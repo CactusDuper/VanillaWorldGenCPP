@@ -57,10 +57,10 @@ namespace VanillaWorldGenCPP {
             cursor.Emit(OpCodes.Ldarg_0);
 
             // Call new static method
-            cursor .Emit(OpCodes.Call, customCallbackMethod);
+            cursor.Emit(OpCodes.Call, customCallbackMethod);
 
             // Properly return
-            cursor .Emit(OpCodes.Ret);
+            cursor.Emit(OpCodes.Ret);
 
             mod?.Logger.Debug("Replaced Terraria.WorldGen.worldGenCallback body with a call to NativeWorldGenSystem.CustomWorldGenEntry.");
         }

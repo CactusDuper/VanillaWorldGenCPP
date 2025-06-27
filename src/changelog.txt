@@ -1,0 +1,1 @@
+v1.3: Difficulty is now properly saved to the world. Please report any bugs as a GitHub issue or on the mod page! Thank you for using my mod :)
